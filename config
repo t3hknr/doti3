@@ -127,5 +127,7 @@ bar {
         status_command i3status
 }
 
+bindsym Ctrl+Mod1+l exec slimlock
+
 exec /usr/bin/caffeine
 exec conky
