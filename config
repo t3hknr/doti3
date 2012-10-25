@@ -128,6 +128,9 @@ bar {
 }
 
 bindsym Ctrl+Mod1+l exec slimlock
+bindsym Ctrl+Mod1+m exec "urxvtc -e ncmpcpp"
+bindsym Mod4+a exec "urxvtc -e alsamixer"
+bindsym Mod4+Shift+a exec "pavucontrol"
 
 exec /usr/bin/caffeine
 exec conky
