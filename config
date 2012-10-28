@@ -22,7 +22,7 @@ set $mod Mod1
 # chose an xft font, such as:
 # font xft:DejaVu Sans Mono 10
 
-font -*-monaco-*-*-*-*-12-*-*-*-*-*-iso8859-2
+font xft:Monaco 9
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -43,7 +43,7 @@ bindsym $mod+Return exec urxvtc
 bindsym $mod+Shift+c kill
 
 # start dmenu (a program launcher)
-bindsym $mod+p exec dmenu_run -fn '-*-monaco-*-*-*-*-12-*-*-*-*-*-iso8859-2' -nb '#002b36' -nf '#839496' -sb '#073642' -sf '#b58900'
+bindsym $mod+p exec dmenu_run -fn 'Monaco:size=9' -nb '#002b36' -nf '#839496' -sb '#073642' -sf '#b58900'
 
 # change focus
 bindsym $mod+h focus left
