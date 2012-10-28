@@ -9,10 +9,10 @@ pad_percents	  3
 override_utf8_locale yes
 
 TEXT
-,[{"full_text": " cpu:$acpitemp°C [$cpu%]"},
-  {"full_text": " mem:[$membar]"},
-  {"full_text": " bat:[$battery_percent%]"},
-  {"full_text": " vol:[${mixer pcm}%]"},
+,[{"full_text": " cpu:$acpitemp°C [$cpu%] "},
+  {"full_text": " mem:[$membar] "},
+  {"full_text": " bat:[$battery_percent%] "},
+  {"full_text": " vol:[${mixer pcm}%] "},
   {"full_text": " ${time %a %d %b} ${time %H:%M} "}
 ]
 
