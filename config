@@ -22,7 +22,7 @@ set $mod Mod1
 # chose an xft font, such as:
 # font xft:DejaVu Sans Mono 10
 
-font xft:Monaco 9
+font xft:Monaco 8
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
