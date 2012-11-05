@@ -153,8 +153,10 @@ bindsym Ctrl+$mod+l exec slimlock
 bindsym Ctrl+$mod+m exec "urxvtc -e ncmpcpp"
 bindsym Mod1+a exec "urxvtc -e alsamixer"
 bindsym Mod1+Shift+a exec "pavucontrol"
+bindsym $mod+minus scratchpad show
+bindsym $mod+Shift+minus move scratchpad
 
 for_window [class="(?i)pidgin"] floating enable
 
-exec /usr/bin/caffeine
-exec conky
+exec --no-startup-id /usr/bin/caffeine
+exec --no-startup-id conky
