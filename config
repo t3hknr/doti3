@@ -43,7 +43,7 @@ bindsym $mod+Return exec urxvtc
 bindsym $mod+Shift+c kill
 
 # start dmenu (a program launcher)
-bindsym $mod+p exec dmenu_run -fn 'Monaco:size=9' -nb '#002b36' -nf '#839496' -sb '#073642' -sf '#b58900'
+bindsym $mod+p exec --no-startup-id dmenu_run -fn 'Monaco:size=9' -nb '#002b36' -nf '#839496' -sb '#073642' -sf '#b58900'
 
 # change focus
 bindsym $mod+h focus left
@@ -149,7 +149,7 @@ bar {
 		}
 }
 
-bindsym Ctrl+$mod+l exec slimlock
+bindsym Ctrl+$mod+l exec --no-startup-id slimlock
 bindsym Ctrl+$mod+m exec "urxvtc -e ncmpcpp"
 bindsym Mod1+a exec "urxvtc -e alsamixer"
 bindsym Mod1+Shift+a exec "pavucontrol"
