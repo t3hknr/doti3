@@ -159,5 +159,3 @@ bindsym $mod+minus scratchpad show
 bindsym $mod+Shift+minus move scratchpad
 
 for_window [class="(?i)pidgin"] floating enable
-
-exec --no-startup-id /usr/bin/caffeine
