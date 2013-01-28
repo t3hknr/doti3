@@ -83,6 +83,8 @@ bindsym $mod+a focus parent
 # focus the child container
 bindsym $mod+d focus child
 
+bindsym $mod+Tab workspace back_and_forth
+
 # switch to workspace
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
@@ -159,4 +161,3 @@ bindsym $mod+Shift+minus move scratchpad
 for_window [class="(?i)pidgin"] floating enable
 
 exec --no-startup-id /usr/bin/caffeine
-exec --no-startup-id conky
