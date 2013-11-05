@@ -10,6 +10,7 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 focus_follows_mouse no
+force_focus_wrapping yes
 
 set $mod Mod4
 
