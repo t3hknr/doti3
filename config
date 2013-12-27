@@ -10,7 +10,7 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 focus_follows_mouse no
-force_focus_wrapping yes
+force_focus_wrapping no
 
 set $mod Mod4
 
@@ -46,6 +46,8 @@ bindsym $mod+Shift+c kill
 # start dmenu (a program launcher)
 bindsym $mod+p exec --no-startup-id dmenu_run -fn 'Monaco:size=9' -nb '#002b36' -nf '#839496' -sb '#073642' -sf '#b58900'
 bindsym $mod+Shift+p exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -fn 'Monaco:size=9' -nb '#002b36' -nf '#839496' -sb '#073642' -sf '#b58900'"
+bindsym $mod+o exec --no-startup-id ~/.dotfiles/bin/pass-dmenu
+bindsym $mod+Shift+o exec --no-startup-id ~/.dotfiles/bin/pass-dmenu -a
 
 # change focus
 bindsym $mod+h focus left
@@ -164,3 +166,6 @@ bindsym Mod1+a exec "urxvtc -e alsamixer"
 bindsym Mod1+Shift+a exec "pavucontrol"
 bindsym $mod+minus scratchpad show
 bindsym $mod+Shift+minus move scratchpad
+
+for_window [window_role="pop-up"] floating enable
+for_window [class="Gcr-prompter" instance="gcr-prompter"] floating enable
