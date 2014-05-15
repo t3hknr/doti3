@@ -10,7 +10,7 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 focus_follows_mouse no
-force_focus_wrapping no
+force_focus_wrapping yes
 
 set $mod Mod4
 
@@ -113,10 +113,8 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
-bindsym $mod+Shift+comma move workspace to output left
-bindsym $mod+Shift+period move workspace to output right
-bindsym $mod+comma move container to output left; focus output left
-bindsym $mod+period move container to output right; focus output right
+bindsym $mod+Shift+semicolon move container to output right; focus output left
+bindsym $mod+semicolon focus output right
 
 # reload the configuration file
 bindsym $mod+q reload
@@ -160,12 +158,13 @@ bar {
 		}
 }
 
-bindsym Ctrl+$mod+l exec --no-startup-id slimlock
-bindsym Ctrl+$mod+m exec "urxvtc -e ncmpcpp"
+bindsym Ctrl+Mod1+l exec --no-startup-id i3lock --tiling --image=${HOME}/.dotfiles/background
+bindsym Ctrl+Mod1+m exec "urxvtc -e ncmpcpp"
 bindsym Mod1+a exec "urxvtc -e alsamixer"
 bindsym Mod1+Shift+a exec "pavucontrol"
 bindsym $mod+minus scratchpad show
 bindsym $mod+Shift+minus move scratchpad
 
 for_window [window_role="pop-up"] floating enable
+for_window [class="Pidgin" instance="Pidgin"] floating enable
 for_window [class="Gcr-prompter" instance="gcr-prompter"] floating enable
