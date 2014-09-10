@@ -151,16 +151,16 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command ~/.i3/conky
-		position top
+    status_command ~/.i3/conky
+    position top
 #border, background, text
-		colors {
-			statusline #839496
-			background #002b36
-			focused_workspace  #268bd2 #073642 #eee8d5
-			inactive_workspace #002b36 #002b36 #839496
-			urgent_workspace   #dc322f #073642 #b58900
-		}
+    colors {
+        statusline #839496
+        background #002b36
+        focused_workspace  #268bd2 #073642 #eee8d5
+        inactive_workspace #002b36 #002b36 #839496
+        urgent_workspace   #dc322f #073642 #b58900
+    }
 }
 
 bindsym Ctrl+Mod1+l exec --no-startup-id i3lock --tiling --image=${HOME}/.dotfiles/background
