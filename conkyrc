@@ -11,9 +11,10 @@ override_utf8_locale yes
 TEXT
 ,[{"full_text": " cpu:$acpitemp°C [$cpu%] "},
   {"full_text": " mem:[$membar] "},
-  {"full_text": " bat:[$battery_percent%] "},
-  {"full_text": " vol:[${mixer}%] "},
+  {"full_text": " vol:[${exec amixer -D pulse get Master | grep 'Front Left:' | awk -F '[][]' '{print $2}'}] "},
+  {"full_text": " EDT:${tztime US/Eastern %H:%M} "},
+  {"full_text": " PST:${tztime US/Pacific %H:%M} "},
   {"full_text": " ${time %a %d %b} " },
-  {"full_text": " LOCAL:${time %H:%M} EDT:${tztime US/Eastern %H:%M} "}
+  {"full_text": " ${time %H:%M:%S} "}
 ]
 
